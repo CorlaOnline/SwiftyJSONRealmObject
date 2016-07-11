@@ -15,6 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A2B6D00A495659BE5774C95D /* Pods_SwiftyJSONRealmObject_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E0D261A692B2BC5173B9A1 /* Pods_SwiftyJSONRealmObject_Tests.framework */; };
 		E3161BC39A628DE0B8DB8B57 /* Pods_SwiftyJSONRealmObject_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A28071C673AC73B5B0B77 /* Pods_SwiftyJSONRealmObject_Example.framework */; };
+		FA7532111D33941D00AD347A /* MyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7532101D33941D00AD347A /* MyObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D093B82F512D0DA88F4F1906 /* Pods-SwiftyJSONRealmObject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJSONRealmObject_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyJSONRealmObject_Example/Pods-SwiftyJSONRealmObject_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E62A28071C673AC73B5B0B77 /* Pods_SwiftyJSONRealmObject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyJSONRealmObject_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCD3AA092A6AF162E4F1BAA /* Pods-SwiftyJSONRealmObject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJSONRealmObject_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyJSONRealmObject_Tests/Pods-SwiftyJSONRealmObject_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FA7532101D33941D00AD347A /* MyObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				FA7532101D33941D00AD347A /* MyObject.swift */,
 			);
 			name = "Example for SwiftyJSONRealmObject";
 			path = SwiftyJSONRealmObject;
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				FA7532111D33941D00AD347A /* MyObject.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

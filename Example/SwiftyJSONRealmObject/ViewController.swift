@@ -7,12 +7,45 @@
 //
 
 import UIKit
+import RealmSwift
+import SwiftyJSON
+import SwiftyJSONRealmObject
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var singleObjectLabel: UILabel!
+    @IBOutlet weak var table: UITableView!
+
+    var myObjList = List<MyObject>()
+
     override func viewDidLoad() {
+
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let json = [
+
+            "id": "1",
+            "type": "type1",
+            "name": "Single Object"
+
+        ]
+
+        let jsonList = [
+
+            [ "id": "1", "type": "type1", "name": "Object 1" ],
+            [ "id": "2", "type": "type2", "name": "Object 2" ],
+            [ "id": "3", "type": "type3", "name": "Object 3" ],
+
+        ]
+
+        let myObj = MyObject(json: JSON(json))
+
+        singleObjectLabel.text = "\(myObj.name)"
+
+        myObjList = SwiftyJSONRealmObject.createList(ofType: MyObject.self, fromJson: JSON(jsonList))
+
+        table.reloadData()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,3 +55,27 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        return myObjList.count
+
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        guard let cell = tableView.dequeueReusableCellWithIdentifier("myCell") as UITableViewCell? else { return UITableViewCell() }
+
+        guard indexPath.row < myObjList.count else { return UITableViewCell() }
+
+        let obj = myObjList[indexPath.row]
+
+        cell.textLabel?.text = "\(obj.id) - \(obj.name)"
+
+        return cell
+
+    }
+
+
+}

@@ -29,6 +29,9 @@ It permit you to initialize your Realm Object directly from SwiftyJSON object, b
   # s.social_media_url = 'https://twitter.com/corlaonline'
 
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
+  s.tvos.deployment_target = '9.0'
+  s.watchos.deployment_target = '2.0'
 
   s.source_files = 'SwiftyJSONRealmObject/Classes/**/*'
   
