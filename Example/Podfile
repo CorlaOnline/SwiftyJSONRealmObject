@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftyJSONRealmObject_Example' do
+  pod 'SwiftyJSONRealmObject', :path => '../'
+
+  target 'SwiftyJSONRealmObject_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
