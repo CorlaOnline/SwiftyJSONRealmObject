@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyJSONRealmObject (0.1.0)
+
+DEPENDENCIES:
+  - SwiftyJSONRealmObject (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftyJSONRealmObject:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftyJSONRealmObject: 7cd2160c2fe6c502f1cd811cda266c7d6af3637f
+
+PODFILE CHECKSUM: 5a3b4ca8a2dca7256fedbc7bf9b0a1e769246a94
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,6 @@
+framework module Pods_SwiftyJSONRealmObject_Example {
+  umbrella header "Pods-SwiftyJSONRealmObject_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

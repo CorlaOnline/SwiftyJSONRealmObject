@@ -1,0 +1,6 @@
+framework module SwiftyJSONRealmObject {
+  umbrella header "SwiftyJSONRealmObject-umbrella.h"
+
+  export *
+  module * { export * }
+}
