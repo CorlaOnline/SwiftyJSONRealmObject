@@ -13,7 +13,7 @@ import SwiftyJSON
  SwiftyJSONRealmObject
  - Description : Object derived from Realm object and is the base for all the objects that want be mapped from JSON
  */
-public class SwiftyJSONRealmObject: Object {
+open class SwiftyJSONRealmObject: Object {
 
     required convenience public init(json: JSON) {
 
@@ -21,7 +21,7 @@ public class SwiftyJSONRealmObject: Object {
 
     }
 
-    public class func createList< T where T: SwiftyJSONRealmObject >(ofType type: T.Type, fromJson json: JSON) -> List<T> {
+    open class func createList< T where T: SwiftyJSONRealmObject >(ofType type: T.Type, fromJson json: JSON) -> List<T> {
 
         let list = List<T>()
 
