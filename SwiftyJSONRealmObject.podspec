@@ -41,6 +41,6 @@ It permit you to initialize your Realm Object directly from SwiftyJSON object, b
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'RealmSwift', '~> 1.0'
+  s.dependency 'RealmSwift'
   s.dependency 'SwiftyJSON'
 end
