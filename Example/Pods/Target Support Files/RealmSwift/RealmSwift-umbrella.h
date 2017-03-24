@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SwiftyJSONRealmObject_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SwiftyJSONRealmObject_TestsVersionString[];
+FOUNDATION_EXPORT double RealmSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char RealmSwiftVersionString[];
 

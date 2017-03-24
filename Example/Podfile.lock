@@ -1,5 +1,13 @@
 PODS:
-  - SwiftyJSONRealmObject (0.1.0)
+  - Realm (2.4.4):
+    - Realm/Headers (= 2.4.4)
+  - Realm/Headers (2.4.4)
+  - RealmSwift (2.4.4):
+    - Realm (= 2.4.4)
+  - SwiftyJSON (3.1.4)
+  - SwiftyJSONRealmObject (1.0.0):
+    - RealmSwift
+    - SwiftyJSON
 
 DEPENDENCIES:
   - SwiftyJSONRealmObject (from `../`)
@@ -9,8 +17,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SwiftyJSONRealmObject: 7cd2160c2fe6c502f1cd811cda266c7d6af3637f
+  Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
+  RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftyJSONRealmObject: b72b1ba6fc4aae70b3df8778ccefb05de5231472
 
 PODFILE CHECKSUM: 5a3b4ca8a2dca7256fedbc7bf9b0a1e769246a94
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0
