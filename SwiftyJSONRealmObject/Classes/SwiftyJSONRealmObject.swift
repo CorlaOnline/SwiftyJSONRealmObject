@@ -21,7 +21,7 @@ open class SwiftyJSONRealmObject: Object {
 
     }
 
-    open class func createList< T where T: SwiftyJSONRealmObject >(ofType type: T.Type, fromJson json: JSON) -> List<T> {
+    open class func createList< T>(ofType type: T.Type, fromJson json: JSON) -> List<T> where T: SwiftyJSONRealmObject  {
 
         let list = List<T>()
 
